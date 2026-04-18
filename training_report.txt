@@ -1,0 +1,53 @@
+================================================================================
+           HYBRID LARAR-ADVNN TRAINING REPORT
+================================================================================
+Device:          cpu
+Epochs:          20
+Input Dim:       35
+Beta:            0.3
+--------------------------------------------------------------------------------
+
+## FINAL PERFORMANCE
+  Test Clean Acc:  0.9999
+  Test Adv Acc:    0.9978
+  Test Clean F1:   0.9999
+  Test Adv F1:     0.9980
+
+## LEARNED LAYER WEIGHTS (positive via softplus)
+  Layer 1: 0.0001
+  Layer 2: 0.0001
+
+## LVS (final test batch)
+  Layer 1: 0.1149
+  Layer 2: 0.0915
+
+## PER-EPOCH SUMMARY
+  Ep 01 | Loss=0.2781 | CleanAcc=0.9652 | AdvAcc=0.9435 | LVS1=0.1124 | LVS2=0.0921 | W1=0.5732 | W2=0.6028
+  Ep 02 | Loss=0.1314 | CleanAcc=0.9969 | AdvAcc=0.9855 | LVS1=0.0870 | LVS2=0.0506 | W1=0.3352 | W2=0.3960
+  Ep 03 | Loss=0.1128 | CleanAcc=0.9969 | AdvAcc=0.9864 | LVS1=0.0832 | LVS2=0.0408 | W1=0.1985 | W2=0.2618
+  Ep 04 | Loss=0.1141 | CleanAcc=0.9960 | AdvAcc=0.9835 | LVS1=0.0858 | LVS2=0.0424 | W1=0.1186 | W2=0.1642
+  Ep 05 | Loss=0.1093 | CleanAcc=0.9960 | AdvAcc=0.9848 | LVS1=0.0878 | LVS2=0.0420 | W1=0.0722 | W2=0.1031
+  Ep 06 | Loss=0.0981 | CleanAcc=0.9971 | AdvAcc=0.9873 | LVS1=0.0903 | LVS2=0.0459 | W1=0.0447 | W2=0.0631
+  Ep 07 | Loss=0.1045 | CleanAcc=0.9964 | AdvAcc=0.9855 | LVS1=0.0931 | LVS2=0.0475 | W1=0.0279 | W2=0.0391
+  Ep 08 | Loss=0.0919 | CleanAcc=0.9974 | AdvAcc=0.9886 | LVS1=0.0966 | LVS2=0.0502 | W1=0.0175 | W2=0.0243
+  Ep 09 | Loss=0.0953 | CleanAcc=0.9975 | AdvAcc=0.9888 | LVS1=0.0989 | LVS2=0.0531 | W1=0.0111 | W2=0.0151
+  Ep 10 | Loss=0.0973 | CleanAcc=0.9974 | AdvAcc=0.9869 | LVS1=0.1017 | LVS2=0.0570 | W1=0.0070 | W2=0.0094
+  Ep 11 | Loss=0.1039 | CleanAcc=0.9960 | AdvAcc=0.9834 | LVS1=0.1064 | LVS2=0.0644 | W1=0.0045 | W2=0.0057
+  Ep 12 | Loss=0.0723 | CleanAcc=0.9984 | AdvAcc=0.9913 | LVS1=0.1075 | LVS2=0.0726 | W1=0.0029 | W2=0.0034
+  Ep 13 | Loss=0.0421 | CleanAcc=0.9998 | AdvAcc=0.9982 | LVS1=0.1064 | LVS2=0.0773 | W1=0.0019 | W2=0.0021
+  Ep 14 | Loss=0.0463 | CleanAcc=0.9997 | AdvAcc=0.9975 | LVS1=0.1071 | LVS2=0.0766 | W1=0.0012 | W2=0.0013
+  Ep 15 | Loss=0.0455 | CleanAcc=0.9997 | AdvAcc=0.9974 | LVS1=0.1093 | LVS2=0.0795 | W1=0.0008 | W2=0.0009
+  Ep 16 | Loss=0.0413 | CleanAcc=0.9998 | AdvAcc=0.9981 | LVS1=0.1084 | LVS2=0.0830 | W1=0.0005 | W2=0.0005
+  Ep 17 | Loss=0.0455 | CleanAcc=0.9997 | AdvAcc=0.9980 | LVS1=0.1088 | LVS2=0.0844 | W1=0.0003 | W2=0.0003
+  Ep 18 | Loss=0.0445 | CleanAcc=0.9998 | AdvAcc=0.9979 | LVS1=0.1113 | LVS2=0.0834 | W1=0.0002 | W2=0.0002
+  Ep 19 | Loss=0.0401 | CleanAcc=0.9998 | AdvAcc=0.9983 | LVS1=0.1116 | LVS2=0.0838 | W1=0.0001 | W2=0.0001
+  Ep 20 | Loss=0.0426 | CleanAcc=0.9997 | AdvAcc=0.9981 | LVS1=0.1128 | LVS2=0.0863 | W1=0.0001 | W2=0.0001
+
+## FINAL LOSS BREAKDOWN
+  CE: 0.0173
+  AUX: 0.0008
+  ALIGN: 0.0214
+  SMOOTH: 0.0031
+  LVS: 0.0000
+
+================================================================================
